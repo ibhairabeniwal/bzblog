@@ -46,7 +46,7 @@
     @apply text-[#777];
   }
   .body {
-    @apply w-full lg:flex lg:mb-4 max-w-[1504px] mx-auto;
+    @apply bg-white w-full lg:flex max-w-[1504px] mx-auto;
   }
   .mainPostSection {
     @apply px-4 py-2 mb-12 lg:mb-0 sm:px-14 md:px-28 ml-0 lg:ml-20 lg:w-[1030px] lg:border-x;
@@ -61,5 +61,27 @@
   .rightSideSection {
     @apply hidden lg:flex flex-col justify-between h-screen sticky mx-auto px-8 py-4 w-[394px] top-0;
   }
+  .pCard {
+    @apply sticky -top-[0.5px] z-50 bg-white;
+  }
+  .pData {
+    @apply flex flex-col space-y-8 mt-5;
+  }
 }
 /* ------------------------------ */
+
+/* -------------Header css start----------------- */
+@layer components {
+  .desktopHeader {
+    @apply flex w-full h-12 border-t justify-between items-center bottom-0 lg:flex-col lg:justify-between lg:items-center lg:h-full lg:w-20 fixed bg-white z-10 lg:p-5;
+  }
+  .mobileHeader {
+    @apply flex w-full p-4 md:px-28 sm:px-14 lg:flex-col justify-between items-center lg:gap-10;
+  }
+  .centerIcon {
+    @apply flex items-center justify-center;
+  }
+  .mobileHiddenIcon {
+    @apply hidden lg:flex items-center justify-center;
+  }
+}

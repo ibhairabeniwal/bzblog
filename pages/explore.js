@@ -5,7 +5,6 @@ import SubscibeSection from "../components/SubscibeSection";
 function explore() {
   return (
     <div className="lg:hidden">
-      <Header />
       <div className="p-4 md:px-28 sm:px-14 flex flex-col space-y-5">
         <div className="flex items-center space-x-3 h-10 border px-4 background text rounded-full">
           <Search />

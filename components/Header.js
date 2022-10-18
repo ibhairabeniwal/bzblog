@@ -2,20 +2,20 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="flex w-full h-12 border-t justify-between items-center bottom-0 lg:flex-col lg:justify-between lg:items-center lg:h-full lg:w-20 fixed bg-white z-10 lg:p-5">
+    <header className="desktopHeader">
       <div className="hidden lg:inline-flex">
         <Link href="/">
           <img className="w-16 cursor-pointer" src="/brandlogo.png" alt="" />
         </Link>
       </div>
-      <div className="flex w-full p-4 md:px-28 sm:px-14 lg:flex-col justify-between items-center lg:gap-10">
+      <div className="mobileHeader">
         <Link href="/">
-          <div className="flex items-center justify-center">
+          <div className="centerIcon">
             <Home />
           </div>
         </Link>
         <Link href="/notification">
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="mobileHiddenIcon">
             <span className="hidden lg:inline-flex">
               <Notification />
             </span>
@@ -29,7 +29,7 @@ function Header() {
           </div>
         </Link>
         <Link href="/list">
-          <div className="flex items-center justify-center">
+          <div className="centerIcon">
             <Lists />
           </div>
         </Link>
@@ -40,14 +40,14 @@ function Header() {
           </div>
         </Link>
         <Link href="/write">
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="mobileHiddenIcon">
             <span className="hidden lg:inline-flex">
               <Write />
             </span>
           </div>
         </Link>
         <Link href="/profile">
-          <div className="flex items-center justify-center">
+          <div className="centerIcon">
             <span className="inline-flex lg:hidden">
               {/* <SignIn /> */}
               <img
