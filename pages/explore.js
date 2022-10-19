@@ -1,5 +1,5 @@
 import React from "react";
-import SubscribeSection from "../components/SubscibeSection";
+import SubscribeSection from "../components/SubscribeSection";
 
 function explore() {
   return (
