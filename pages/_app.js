@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import RightSideBar from "../components/RightSideBar";
+import StaffPick from "../components/StaffPick";
+import SubscribeSection from "../components/SubscribeSection";
 import "../styles/globals.css";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, exp }) {
   return (
     <div className="bg-white">
       <Head>
@@ -15,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <div className="mainPostSection">
           <Component {...pageProps} />
         </div>
-        <div className="rightSideSection"></div>
+        <RightSideBar />
       </main>
     </div>
   );

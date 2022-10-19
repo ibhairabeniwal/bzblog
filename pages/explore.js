@@ -1,6 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
-import SubscibeSection from "../components/SubscibeSection";
+import SubscribeSection from "../components/SubscibeSection";
 
 function explore() {
   return (
@@ -17,7 +16,7 @@ function explore() {
         <div>
           <h1 className="text">Recent Searches</h1>
         </div>
-        <SubscibeSection />
+        <SubscribeSection />
       </div>
     </div>
   );

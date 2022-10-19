@@ -57,7 +57,7 @@
   .categorySlider {
     @apply flex py-4 md:py-6 lg:py-10 scroll-smooth space-x-5 overflow-scroll scrollbar-hide;
   }
-  /* Right Side Sectuon */
+  /* Right Side Section */
   .rightSideSection {
     @apply hidden lg:flex flex-col justify-between h-screen sticky mx-auto px-8 py-4 w-[394px] top-0;
   }
@@ -73,10 +73,10 @@
 /* -------------Header css start----------------- */
 @layer components {
   .desktopHeader {
-    @apply flex w-full h-12 border-t justify-between items-center bottom-0 lg:flex-col lg:justify-between lg:items-center lg:h-full lg:w-20 fixed bg-white z-10 lg:p-5;
+    @apply flex w-full h-12 border-t lg:border-t-0 justify-between items-center -bottom-[0.5px] lg:flex-col lg:justify-between lg:items-center lg:h-full lg:w-20 fixed bg-white z-10 lg:p-5;
   }
   .mobileHeader {
-    @apply flex w-full p-4 md:px-28 sm:px-14 lg:flex-col justify-between items-center lg:gap-10;
+    @apply flex w-full -mt-[0.5px] p-4 md:px-28 sm:px-14 lg:flex-col justify-between items-center lg:gap-10;
   }
   .centerIcon {
     @apply flex items-center justify-center;

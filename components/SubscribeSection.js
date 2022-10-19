@@ -1,6 +1,6 @@
 import React from "react";
 
-function SubscibeSection() {
+function SubscribeSection() {
   return (
     <div className="flex flex-col background p-4 rounded space-y-5">
       <span className="text">
@@ -20,4 +20,4 @@ function SubscibeSection() {
   );
 }
 
-export default SubscibeSection;
+export default SubscribeSection;

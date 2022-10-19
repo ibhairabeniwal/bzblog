@@ -31,20 +31,3 @@ function Footer() {
 }
 
 export default Footer;
-// Help
-
-// Status
-
-// Writers
-
-// Blog
-
-// Careers
-
-// Privacy
-
-// Terms
-
-// About
-
-// Knowable

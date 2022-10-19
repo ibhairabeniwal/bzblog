@@ -3,20 +3,20 @@ import CategorySlider from "../components/CategorySlider";
 import HorizontalPost from "../components/HorizontalPost";
 import PostSlider from "../components/PostSlider";
 import SinglePost from "../components/SinglePost";
-import SubscibeSection from "../components/SubscibeSection";
+import SubscribeSection from "../components/SubscribeSection";
 import TodaySelectedYou from "../components/TodaySelectedYou";
 import TopMainHeadingSection from "../components/TopMainHeadingSection";
 
 export default function Home({ expData, singlePost }) {
   return (
-    <div className="">
+    <div>
       {/* --------Top Main Heading Section Start---------- */}
       <div>
         <TopMainHeadingSection />
         <div className="postSlider">
           {expData.map((slider) => (
             <PostSlider
-              key={slider.pimage}
+              key={slider.id}
               img={slider.pimage}
               title={slider.title}
               category={slider.category}
@@ -30,7 +30,7 @@ export default function Home({ expData, singlePost }) {
       <div className="categorySlider">
         <button className="btn-primary">All</button>
         {expData.map((slider) => (
-          <CategorySlider key={slider.category} category={slider.category} />
+          <CategorySlider key={slider.id} category={slider.category} />
         ))}
       </div>
       {/* --------CategorySlider Section End---------- */}
@@ -38,7 +38,7 @@ export default function Home({ expData, singlePost }) {
       <div>
         {singlePost.map((spost) => (
           <SinglePost
-            key={spost.pimage}
+            key={spost.id}
             category={spost.category}
             image={spost.pimage}
             avatar={spost.avatar}
@@ -55,24 +55,22 @@ export default function Home({ expData, singlePost }) {
       <div className="flex flex-col space-y-8">
         <TodaySelectedYou />
         {expData.map((hpost) => (
-          <Link href="">
-            <HorizontalPost
-              key={hpost.pimage}
-              category={hpost.category}
-              image={hpost.pimage}
-              avatar={hpost.avatar}
-              title={hpost.title}
-              username={hpost.username}
-              name={hpost.full_name}
-              description={hpost.description}
-            />
-          </Link>
+          <HorizontalPost
+            key={hpost.id}
+            category={hpost.category}
+            image={hpost.pimage}
+            avatar={hpost.avatar}
+            title={hpost.title}
+            username={hpost.username}
+            name={hpost.full_name}
+            description={hpost.description}
+          />
         ))}
       </div>
       {/* --------Horizontal Post Section End---------- */}
       {/* --------Email Subscription Start---------- */}
       <div className="py-5 lg:hidden">
-        <SubscibeSection />
+        <SubscribeSection />
       </div>
       {/* --------Email Subscription End---------- */}
     </div>

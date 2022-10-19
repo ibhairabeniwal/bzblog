@@ -5,12 +5,13 @@ import { AiOutlineComment } from "react-icons/ai";
 function PostSlider({ title, category, img }) {
   return (
     <div className="flex flex-col space-y-1">
-      <div className="w-[328px] h-[185.63px] bg-gray-300 rounded-md">
+      <div className="w-[328px] h-[185.63px] bg-gray-300 rounded-md relative">
         <img
           className="rounded-md h-full w-full object-cover"
           src={img}
           alt="Image of the post"
         />
+        {/* <button className="btn-primary absolute top-3 left-3">Trending</button> */}
       </div>
       <div>
         <h1 className="text-xl lg:text-2xl font-roboto font-semibold text-color-primary truncate w-[328px]">
